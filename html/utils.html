@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents</title>
+    <link rel="stylesheet" href="../css/utils-style.css">
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+
+    <!--    NAVBAR DEPENDENCIES-->
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+    <!--   -->
+</head>
+<body>
+
+<section class="navigation">
+    <div class="nav-container row">
+        <div class="col ml- pl-5 text-left">
+            <img src="../img/logo.png" alt="logo_imt_ales" style="height: 70px">
+        </div>
+        <nav class="mr-5">
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="epreuves.html">épreuves</a>
+                </li>
+                <li>
+                    <a href="utils.html">Documents</a>
+                </li>
+                <li>
+                    <a href="Apropos.html">à propos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<div id="main-container">
+    <h1>Liens utiles</h1>
+    <div class="x-card-container">
+        <div class="x-card">
+            <div>
+                <img src="../img/pdf-icon.png">
+                <h2>Épreuve technique</h2>
+                <p>Document contenant les règles et le parcours de l'épreuve technique.</p>
+            </div>
+            <input type="button" value="Télécharger" onclick="window.open('../files/epreuve_technique.pdf','_blank')">
+        </div>
+        <div class="x-card">
+            <div>
+                <img src="../img/pdf-icon.png">
+                <h2>Épreuve artistique</h2>
+                <p>Document contenant les règles et le terrain de l'épreuve artistique.</p>
+            </div>
+            <input type="button" value="Télécharger" onclick="window.open('../files/epreuve_artistique.pdf','_blank')">
+        </div>
+        <div class="x-card">
+            <div>
+            <img src="../img/pdf-icon.png">
+            <h2>Grille de notation</h2>
+            <p>Grille de notation pour l'épreuve technique et artistique.</p>
+            </div>
+            <input type="button" value="Télécharger" onclick="window.open('../files/notation.pdf','_blank')">
+        </div>
+    </div>
+</div>
+
+<canvas id="canvas">Canvas is not supported in your browser.</canvas>
+
+</body>
+<script src="../js/fireworks-animation.js"></script>
+</html>

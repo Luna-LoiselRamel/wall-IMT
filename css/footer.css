@@ -1,0 +1,24 @@
+#footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(51, 51, 54);
+
+    font-family: now-medium, sans-serif;
+    font-size: 0.7em;
+
+    color: white;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-section p {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#footer-section * {
+    margin-left: 5px;
+}

@@ -1,0 +1,104 @@
+@import "navBar.css";
+
+
+.circle {
+    max-width: 10vw;
+    height: 10vw;
+    padding-top: 2rem!important;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #30b4ff;
+    color: white;
+    margin: auto !important;
+}
+
+.circle div{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.circle span {
+    font-size: smaller;
+}
+
+
+.texteAnimated {
+    width: 100%;
+    animation: ecriture 2s steps(22), animate .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+}
+
+@keyframes ecriture {
+    from {
+        width: 0
+    }
+}
+
+@keyframes animate {
+    50% {
+        border-color: transparent
+    }
+}
+
+.custom-btn {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'segoe';
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.custom-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.custom-btn a:after {
+    color: #000000;
+}
+
+/* button */
+.btn-15 {
+    background: #30b4ff;
+    border: none;
+    z-index: 1;
+}
+.btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #005cbf;
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+.btn-15:hover {
+    color: #000000;
+}
+.btn-15:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-15:active {
+    top: 2px;
+}

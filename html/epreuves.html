@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/epreuve-style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+    <title>Épreuves</title>
+
+    <!--    NAVBAR DEPENDENCIES-->
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+    <!--   -->
+
+    <!--    AWESOME DEPENDENCIES-->
+    <script src="../js/edb0f718e3.js" crossorigin="anonymous"></script>
+    <!--   -->
+</head>
+<body>
+
+<div id="main-container">
+    <section class="navigation">
+        <div class="nav-container row">
+            <div class="col ml- pl-5 text-left">
+                <img src="../img/logo.png" alt="logo_imt_ales" style="height: 70px">
+            </div>
+            <nav class="mr-5">
+                <ul class="nav-list">
+                    <li>
+                        <a href="../index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="epreuves.html">épreuves</a>
+                    </li>
+                    <li>
+                        <a href="utils.html">Documents</a>
+                    </li>
+                    <li>
+                        <a href="Apropos.html">à propos</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!--    ################################################################################################################# -->
+
+    <div id="home-page">
+        <div class="home-element tech">
+            <div>
+                <h3>Une épreuve</h3>
+                <h1>technique</h1>
+            </div>
+            <input type="button" value="En savoir +" onclick="document.location.href = '#tech'">
+        </div>
+        <div class="home-element art">
+            <div>
+                <h3>Une épreuve</h3>
+                <h1>artistique</h1>
+            </div>
+            <input type="button" value="En savoir +" onclick="document.location.href = '#art'">
+        </div>
+    </div>
+
+    <!--    ################################################################################################################# -->
+
+    <section id="tech" class="content white">
+        <div class="full-text">
+            <h1>Épreuve technique</h1>
+            <p>La première épreuve que nous vous proposons va permettre
+                de démontrer de votre maîtrise de
+                la configuration et l’utilisation des robots.
+                Vous devrez suivre un parcours prédéfini qui comporte des
+                exercices techniques imposés.</p>
+            <p>
+                Les parties difficiles du parcours peuvent être ignorées,
+                cependant cela aura une répercussion sur les notes du jury.
+                Les critères de notation sont définis, la grille de notation est
+                fournie en annexe.
+            </p>
+        </div>
+    </section>
+
+    <section class="content grey">
+
+        <div class="full-text">
+            <h1>Contraintes</h1>
+            <ul class="formatted">
+                <li><i class="fa-solid fa-clock"></i>
+                    <div>Finir le parcours en moins de cinq minutes.</div>
+                </li>
+                <li><i class="fa-solid fa-road-circle-xmark"></i> Ne pas faire de sortie de route.</li>
+                <li><i class="fa-solid fa-xmark"></i> Ne pas sortir de la surface de travail.</li>
+                <li><i class="fa-solid fa-burst"></i>Ne pas créer de collisions (avec tout élément extérieur).</li>
+                <li><i class="fa-solid fa-children"></i>Aucune intervention humaine (prise de contrôle ou déplacer un
+                    robot qui s’est mal dirigé).
+                </li>
+                <li><i class="fa-solid fa-flag-checkered"></i> Le robot doit passer par le début et la fin du circuit.
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i> Plusieurs robots peuvent être lancés en même temps et cela
+                    ne doit pas les empêcher d’atteindre l’arrivée (éviter de finir dans une situation ou 2 robots se
+                    bloquent et restent immobiles).
+                </li>
+                <li><i class="fa-solid fa-list-check"></i> Suivre le parcours défini au préalable.</li>
+            </ul>
+            <p class="important">
+                En cas de non-respect des contraintes,
+                des points seront retirés, ce qui peut mener à la disqualification de l’équipe.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="content white">
+        <div class="card">
+            <iframe class="animation" src="car-animation.html"></iframe>
+        </div>
+        <div class="content-text">
+            <h1>Le parcours</h1>
+            <p>Le parcours est composé de figures spécifiques à effectuer, reliées entre elles par des trajectoires.
+                On peut y retrouver les figures techniques suivantes :
+            </p>
+            <ul>
+                <li><i class="fa-1x fa-solid fa-share"></i> Virages en épingle</li>
+                <li><i class="fa-1x fa-solid fa-shuffle"></i> Croisements</li>
+                <li><i class="fa-1x fa-solid fa-rotate-right"></i> Demi-tour sur place</li>
+                <li><i class="fa-1x fa-solid fa-robot"></i>Gestion du partage de l’espace avec les autres robots</li>
+                <li><i class="fa-1x fa-solid fa-arrow-right-arrow-left"></i> Slalom en marche avant et en marche arrière
+                </li>
+            </ul>
+            <div class="centered-container">
+            <input type="button" value="Télécharger le parcours" onclick="window.open('../files/epreuve_technique.pdf','_blank')">
+            </div>
+        </div>
+    </section>
+
+<!--    #################################################################################################################"-->
+
+    <section id="art" class="content grey">
+        <div class="full-text">
+            <h1>Épreuve artistique</h1>
+            <p>La deuxième épreuve que nous vous proposons va vous permettre de montrer
+                que vous maitrisez la configuration et l’utilisation des capteurs des robots.
+                Vous serez soumis à des contraintes et vous devrez créer une prestation artistique.
+                Vous pourrez intégrer une foule d’éléments extérieurs afin d’agrémenter vos robots
+                et votre chorégraphie.</p>
+
+            <p>La consigne de cette épreuve sera beaucoup moins fournie et vous devrez
+                faire appel à votre imagination afin d'émerveiller le public et le jury présent
+                lors de la chorégraphie de présentation. La notation est purement subjective
+                et dépend de la sensibilité des jurys.</p>
+
+        </div>
+    </section>
+
+    <section class="content white">
+
+        <div class="full-text">
+            <h1>Contraintes</h1>
+            <ul class="formatted">
+                <li><i class="fa-solid fa-clock"></i>Durée de l’épreuve entre 2min et 3min.</li>
+                <li><i class="fa-solid fa-xmark"></i> Ne pas sortir de la surface de travail (6m x 6m).</li>
+                <li><i class="fa-solid fa-burst"></i>Ne pas créer de collisions (avec tout élément extérieur).</li>
+                <li><i class="fa-solid fa-children"></i>Aucune intervention humaine (prise de contrôle ou déplacer un
+                    robot qui s’est mal dirigé).
+                </li>
+                <li><i class="fa-solid fa-robot"></i> Les 8 robots doivent être utilisés lors de la chorégraphie.</li>
+                <li><i class="fa-solid fa-music"></i> Une musique doit être choisie pour la présentation.</li>
+            </ul>
+            <p class="important">
+                En cas de non-respect des contraintes,
+                des points seront retirés, ce qui peut mener à la disqualification de l’équipe.
+            </p>
+
+            <div class="centered-container">
+                <input type="button" value="Télécharger la grille de notation" onclick="window.open('../files/notation.pdf','_blank')">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="content grey">
+        <div class="content-text">
+            <h1>Les actions possibles</h1>
+            <ul class="formatted">
+                <li><i class="fa-1x fa-solid fa-arrow-right-long"></i>  Se déplacer </li>
+                <li><i class="fa-1x fa-solid fa-rotate-right"></i>  Tourner</li>
+                <li><i class="fa-1x fa-solid fa-table-cells"></i>   Afficher avec un panneau LED</li>
+                <li><i class="fa-1x fa-solid fa-music"></i> Émettre de la musique</li>
+                <li><i class="fa-1x fa-brands fa-pied-piper-hat"></i>Ajouter des accessoires sur le robot</li>
+            </ul>
+            <p>Vous pouvez utiliser tout l’espace ou moins si cela ne vous semble pas pertinent.</p>
+        </div>
+        <div class="card">
+            <iframe class="animation" src="art-animation.html"></iframe>
+        </div>
+    </section>
+
+    <!--    #################################################################################################################"-->
+
+    <div id="footer-section">
+        <p>Site réalisé par l'école des Mines d'Alès avec </p>
+        <div>&#10084;</div>
+        <div>|</div>
+        <a href="#" target="_blank">Mentions légales</a>
+    </div>
+</div>
+
+
+</body>
+</html>

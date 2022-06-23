@@ -1,0 +1,121 @@
+@import "font.css";
+
+body {
+    font-family: "segoe", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    background-color: #27282c !important;
+}
+
+.navigation * {
+    z-index: 1;
+}
+
+#main-container {
+    margin-right: 20%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#main-container h1 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    text-align: left;
+    align-self: start;
+    color: white;
+}
+
+
+.x-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 60vh;
+}
+
+.x-card {
+    width: 300px;
+    height: 100%;
+
+    padding: 15px;
+    margin: 10px;
+
+    color: white;
+    background-color: hsla(0, 0%, 100%, .05);
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(134, 134, 134, 0.53);
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    transition: all 300ms;
+
+    z-index: 1;
+}
+
+.x-card:hover {
+    border-color: white;
+}
+
+.x-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.x-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.x-card h2 {
+    text-align: left;
+    font-size: 1em;
+    margin-top: 3rem;
+}
+
+.x-card p {
+    text-align: left;
+    font-size: 0.8em;
+    color: hsla(0, 0%, 100%, .7);
+}
+
+.x-card input {
+    align-self: center;
+    margin-top: 10px;
+}
+
+input[type="button"] {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+
+    transition: all 300ms;
+}
+
+input[type="button"]:hover {
+    background-color: #adadad;
+}
+
+canvas{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+canvas:hover {
+    cursor: crosshair;
+}

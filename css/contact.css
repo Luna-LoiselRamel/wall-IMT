@@ -1,0 +1,104 @@
+@import url(navBar.css);
+
+#back {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index :-1;
+}
+
+#centerDiv {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100% /* Need a specific value to work */;
+}
+
+#centerDiv div {
+    background-color: #282941;
+}
+
+/*FORM*/
+
+#bannerContact {
+    background: url(../img/contact.jpg) no-repeat fixed 100% 100%;
+    background-size: cover;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+#bannertextContact {
+    width: 30vw;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: auto;
+    padding: 0 0 1em;
+    background-color: white;
+    opacity: 0.9;
+    font-size: medium;
+}
+@keyframes translate {
+    from{top:0%;}
+    to{top:20%;}
+}
+
+.move{
+    animation-name:translate;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
+
+
+/*MAP*/
+
+.static-img {
+    display: block;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* From https://codepen.io/chriscoyier/full/kycDp */
+.map-container {
+    width: 100%;
+    height: 100% !important;
+    margin: 0 auto;
+    height: 0;
+    padding-top: 38%;
+    position: relative;
+    display: none;
+    /* Hide for small screens */
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    /* had to specify height/width */
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+    .map-container {
+        display: block;
+    }
+
+    .static-img {
+        display: none;
+    }
+}

@@ -1,0 +1,134 @@
+@import "font.css";
+
+.navigation {
+    height: 70px;
+    overflow: hidden;
+    z-index: 2;
+    /*display: contents;*/
+    /*position: fixed;*/
+}
+
+.nav-container{
+    background: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+    position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    background: #30b4ff;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: " ▾";
+}
+nav ul li ul li {
+    min-width: 190px;
+}
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+/*BANNER*/
+
+
+html {
+    height: 100%;
+}
+body {
+    background: #fff;
+    font: 400 1.5em/1.5 "segoe", serif;
+    color: #111;
+    text-align: center;
+    height: 100%;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font: 700 2.8em/1.2 "segoe", sans-serif;
+}
+h2 {
+    font: 700 1.5em/1.5 "segoe", sans-serif;
+    margin: 1em 0;
+}
+
+#banner {
+    background: url(../img/mbot.jpg) no-repeat fixed 100% 100%;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+#bannertext {
+    width: 24em;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    border: 0.5em solid #fff;
+    margin-left: -12em;
+    padding: 2em 0;
+}
+
+#content {
+    text-align: justify;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+#content p {
+    margin: 0 0 2em;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+.btn-primary {
+    background-color: #30b4ff;
+    border-color: #30b4ff;
+    color: white;
+    transition: 500ms;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    font-weight: bold;
+    color: #30b4ff;
+}
