@@ -13,42 +13,30 @@
     <!--    NAVBAR DEPENDENCIES-->
     <script src="../js/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/navBar.css"> -->
     <!--   -->
 
     <!--    AWESOME DEPENDENCIES-->
     <script src="../js/edb0f718e3.js" crossorigin="anonymous"></script>
+    
     <!--   -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
 
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+    $("#nav-placeholder").load("nav.html");
+});
+</script>
+
 <div id="main-container">
-    <section class="navigation">
-        <div class="nav-container row">
-            <div class="col ml- pl-5 text-left">
-                <img src="../img/logo.png" alt="logo_imt_ales" style="height: 70px">
-            </div>
-            <nav class="mr-5">
-                <ul class="nav-list">
-                    <li>
-                        <a href="../index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="epreuves.html">épreuves</a>
-                    </li>
-                    <li>
-                        <a href="utils.html">Documents</a>
-                    </li>
-                    <li>
-                        <a href="Apropos.html">à propos</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
 
     <!--    ################################################################################################################# -->
 
@@ -118,7 +106,7 @@
 
     <section class="content white">
         <div class="card">
-            <iframe class="animation" src="car-animation.html"></iframe>
+            <iframe class="animation" id="car-animation" src="car-animation.html"></iframe>
         </div>
         <div class="content-text">
             <h1>Le parcours</h1>

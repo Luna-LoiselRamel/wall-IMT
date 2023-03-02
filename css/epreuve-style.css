@@ -64,16 +64,41 @@ body {
     width: 70vw;
 }
 
+@media screen and (min-width: 768px) {
+
+    #home-page .home-element h3 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    #home-page .home-element h1 {
+        font-size: 6em;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
 
 #home-page .home-element h3 {
-    font-size: 2.5em;
     text-align: center;
 }
 
 #home-page .home-element h1 {
-    font-size: 6em;
     font-weight: bold;
     text-align: center;
+}
+@media screen and (min-width: 768px) {
+    #home-page input {
+        background: none;
+        color: white;
+        border-color: white;
+        border-style: solid;
+        padding: 20px;
+        font-size: 2em;
+        border-width: 5px;
+
+        transition: all 500ms;
+    }
 }
 
 #home-page input {
@@ -82,11 +107,12 @@ body {
     border-color: white;
     border-style: solid;
     padding: 20px;
-    font-size: 2em;
+
     border-width: 5px;
 
     transition: all 500ms;
 }
+
 
 #home-page input:hover {
     transform: scale(1.06);
@@ -106,12 +132,9 @@ section.content {
     align-items: center;
     justify-content: space-evenly;
 
-    padding: 60px;
+    padding: 4vh;
 }
 
-section.white {
-
-}
 
 section.grey{
     background-color: #f6f6f6;
@@ -147,6 +170,7 @@ section.content .full-text{
 section.content .content-text {
     text-align: left;
     width: 40vw;
+    margin: 2vh;
 }
 
 section.content h1 {
@@ -210,4 +234,12 @@ section.content input[type="button"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    #car-animation {
+        transform: rotate(90deg);
+        width: 166%;
+    }
 }

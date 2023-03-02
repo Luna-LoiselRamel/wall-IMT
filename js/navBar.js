@@ -1,21 +1,17 @@
-stickyNavBar();
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function () {
-    stickyNavBar()
-};
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
 
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyNavBar() {
-    // Get the navbar
-    var navbar = document.getElementById("navBar");
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
+}
 
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-    if (window.scrollY >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
 }
