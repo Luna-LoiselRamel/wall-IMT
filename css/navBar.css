@@ -10,7 +10,6 @@
 
 .nav-container{
     background: white;
-    margin: 0;
 }
 
 nav ul {
@@ -56,15 +55,7 @@ nav ul li ul li a {
 html {
     height: 100%;
 }
-body {
-    background: #fff;
-    font: 400 1.5em/1.5 "segoe", serif;
-    color: #111;
-    text-align: center;
-    height: 100%;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-}
+
 
 body::-webkit-scrollbar {
     display: none;
@@ -76,30 +67,7 @@ h1 {
 h2 {
     font: 700 1.5em/1.5 "segoe", sans-serif;
     margin: 1em 0;
-}
-
-#banner {
-    background: url(../img/mbot.jpg) no-repeat fixed 100% 100%;
-    background-size: cover;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-}
-
-#bannertext {
-    width: 24em;
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    border: 0.5em solid #fff;
-    margin-left: -12em;
-    padding: 2em 0;
-}
-
-#content {
-    text-align: justify;
-    margin: 0 auto;
-    padding: 2em;
+    text-align: center;
 }
 
 #content p {
@@ -132,3 +100,4 @@ h2 {
     font-weight: bold;
     color: #30b4ff;
 }
+

@@ -8,11 +8,9 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index :-1;
 }
 
 #centerDiv {
-    z-index: 1;
     position: absolute;
     left: 0;
     right: 0;
@@ -215,7 +213,6 @@ textarea.form-control {
   color: #2553b8; }
 
   .box{
- z-index: 1;
   background-color: #e8edf0;
   position: relative;
   padding-bottom: 0px;
@@ -231,7 +228,6 @@ textarea.form-control {
     left: -2px;
     bottom: -2px;
     right: -2px;
-    z-index: -1;
     transition: all 0.5s ease 0s;
 }
 
@@ -273,6 +269,18 @@ textarea.form-control {
   animation: gradient-animation 18s ease infinite;
 }
 
+@media screen and (min-width: 768px) {
+  .gradient-background{
+    height: 92vh;
+  }
+  .ftco-section{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -307,5 +315,7 @@ textarea.form-control {
   }
   .ftco-section{
     padding: 1em;
+
   }
 }
+

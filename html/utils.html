@@ -10,38 +10,24 @@
     <link rel="icon" type="image/png" href="../img/favicon.ico">
 
     <!--    NAVBAR DEPENDENCIES-->
-    <script src="../js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/navBar.css">
     <!--   -->
 </head>
 <body>
 
-<section class="navigation">
-    <div class="nav-container row">
-        <div class="col ml- pl-5 text-left">
-            <img src="../img/logo.png" alt="logo_imt_ales" style="height: 70px">
-        </div>
-        <nav class="mr-5">
-            <ul class="nav-list">
-                <li>
-                    <a href="../index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="epreuves.html">épreuves</a>
-                </li>
-                <li>
-                    <a href="utils.html">Documents</a>
-                </li>
-                <li>
-                    <a href="Apropos.html">à propos</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+    $("#nav-placeholder").load("nav.html");
+});
+</script>
+
 </section>
 
 <div id="main-container">

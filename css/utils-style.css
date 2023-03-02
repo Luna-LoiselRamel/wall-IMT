@@ -62,7 +62,6 @@ body {
 
     transition: all 300ms;
 
-    z-index: 1;
 }
 
 .x-card:hover {
@@ -110,11 +109,11 @@ input[type="button"]:hover {
     background-color: #adadad;
 }
 
-canvas{
+/* canvas{
     position:absolute;
     left:0;
     top:0;
-}
+} */
 
 canvas:hover {
     cursor: crosshair;

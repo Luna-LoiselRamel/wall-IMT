@@ -1,5 +1,20 @@
 @import "navBar.css";
 
+body {
+    background: #fff;
+    font: 1.5em/1.5 "segoe", serif;
+    color: #111;
+    text-align: center;
+    height: 100%;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.8em; /* la taille de police sera plus petite pour les écrans plus petits */
+    }
+}
 
 .circle {
     max-width: 10vw;
@@ -102,3 +117,36 @@
 .btn-15:active {
     top: 2px;
 }
+
+#banner {
+    background: url(../img/mbot.jpg) no-repeat fixed 100% 100%;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+#bannertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.5em solid #fff;
+    padding: 2vh;
+}
+
+#content {
+    text-align: justify;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.bannerText {
+    font-size: 3em;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .bannerText {
+    font-size: 2em;
+    }
+    }
